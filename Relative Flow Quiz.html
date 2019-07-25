@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0070)http://udacity.github.io/fend/fend-refresh/lesson6/quiz-relative-flow/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Relative Flow Quiz</title>
   <link href="./Relative Flow Quiz_files/css" rel="stylesheet" type="text/css">
   <meta name="udacity-grader" content="tests.json">
@@ -12,21 +15,26 @@
       font-weight: bold;
       font-size: 14pt;
     }
+
     .bordered {
       border: 2px solid #2e3d49;
     }
+
     .parent {
       height: 100%;
       background-color: #dbe2e8;
       padding: 8px;
     }
+
     .light-olive {
       background-color: #DFDFD1;
     }
+
     .relative {
       position: relative;
       top: 50px;
     }
+
     .sibling {
       vertical-align: text-top;
       display: inline-block;
@@ -34,11 +42,18 @@
       width: 150px;
       height: 100px;
     }
+
     .child {
       background-color: #ffae0c;
     }
   </style>
-<link rel="import" href="chrome-extension://melpgahbngpgnbhhccnopmlmpbmdaeoi/app/templates/feedback.html" id="udacity-test-widget"><script id="ud-grader-options">UdacityFEGradingEngine.turnOn();</script></head>
+  <link rel="import" href="chrome-extension://melpgahbngpgnbhhccnopmlmpbmdaeoi/app/templates/feedback.html"
+    id="udacity-test-widget">
+  <script id="ud-grader-options">
+    UdacityFEGradingEngine.turnOn();
+  </script>
+</head>
+
 <body>
   <div class="parent">Parent<br>
     <div class="sibling bordered">Sibling</div>
@@ -52,4 +67,18 @@
     Sibling to the parent
   </span>
 
-<div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;"></div><script src="chrome-extension://melpgahbngpgnbhhccnopmlmpbmdaeoi/app/js/libs/GE.js" id="udacity-front-end-feedback"></script><script id="ud-47302834">UdacityFEGradingEngine.registerSuites("[{\n  \"name\": \"Debugging CSS\",\n  \"code\": \"movin-on-up\",\n  \"tests\": [{\n    \"description\": \"The non-relative siblings have moved up\",\n    \"definition\": {\n      \"nodes\": \".sibling:not(.relative)\",\n      \"cssProperty\": \"verticalAlign\",\n      \"equals\": [\"top\", \"text-top\"]\n    }\n  }]\n}]");</script><test-widget></test-widget></body><umsdataelement id="UMSSendDataEventElement"></umsdataelement></html>
+  <div id="UMS_TOOLTIP"
+    style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;">
+  </div>
+  <script src="chrome-extension://melpgahbngpgnbhhccnopmlmpbmdaeoi/app/js/libs/GE.js" id="udacity-front-end-feedback">
+  </script>
+  <script id="ud-47302834">
+    UdacityFEGradingEngine.registerSuites(
+      "[{\n  \"name\": \"Debugging CSS\",\n  \"code\": \"movin-on-up\",\n  \"tests\": [{\n    \"description\": \"The non-relative siblings have moved up\",\n    \"definition\": {\n      \"nodes\": \".sibling:not(.relative)\",\n      \"cssProperty\": \"verticalAlign\",\n      \"equals\": [\"top\", \"text-top\"]\n    }\n  }]\n}]"
+    );
+  </script>
+  <test-widget></test-widget>
+</body>
+<umsdataelement id="UMSSendDataEventElement"></umsdataelement>
+
+</html>
